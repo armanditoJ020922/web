@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Respaldo de Información</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #222;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: 40px auto;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    h1 {
+      color: #1a202c;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #3182ce;
+      padding-bottom: 8px;
+    }
+
+    h4 {
+      color: #2c5282;
+      margin-top: 25px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    h5 {
+      color: #2b6cb0;
+      margin-top: 20px;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    p, ul {
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: inside disc;
+      padding-left: 0;
+      margin-left: 15px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Emoji icons before headings and key points */
+    h1::before {
+      content: "🗄️ ";
+      font-size: 1.3rem;
+    }
+
+    p::before {
+      content: "📌 ";
+      font-size: 1.1rem;
+      vertical-align: middle;
+    }
+
+    .important::before {
+      content: "✅ ";
+      color: #38a169;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    /* Remove the bullet for ul but keep spacing */
+    ul li::marker {
+      color: #3182ce;
+      font-weight: bold;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px 20px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      h4 {
+        font-size: 1.2rem;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+      p, ul li {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        margin: 20px 10px;
+        padding: 20px 15px;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+      h4 {
+        font-size: 1.1rem;
+      }
+      h5 {
+        font-size: 0.95rem;
+      }
+      p, ul li {
+        font-size: 0.95rem;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <style>
+  .btn-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* o left: 20px; */
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s;
+    z-index: 1000;
+  }
+
+  .btn-home:hover {
+    background-color: #555;
+  }
+</style>
+
+<a href="proyecto.html" class="btn-home">Volver al inicio</a>
+</head>
+<body>
+  <div class="container">
+    <h1>Qué es un respaldo de información?</h1>
+    <p>Un respaldo de información es una copia de seguridad de datos almacenados en medios físicos o digitales, creada para poder recuperarlos en caso de pérdida, daño, robo, o error humano.</p>
+    <p>Su objetivo principal es proteger la información crítica de una organización o persona.</p>
+
+    <h4>¿Por qué es importante hacer respaldos?</h4>
+    <ul>
+      <li class="important">Evita pérdidas por fallas de hardware o software.</li>
+      <li class="important">Protege contra ataques cibernéticos (ransomware, virus).</li>
+      <li class="important">Recupera información tras errores humanos (borrado accidental).</li>
+      <li class="important">Cumple con normativas legales o auditorías (en empresas y gobiernos).</li>
+      <li class="important">Da continuidad al negocio ante emergencias.</li>
+    </ul>
+
+    <h4>Tipos de respaldo</h4>
+
+    <h5>1. Respaldo completo (Full Backup)</h5>
+    <p>Copia todos los archivos seleccionados.<br>Ventaja: recuperación rápida.<br>Desventaja: ocupa más espacio y tarda más.</p>
+
+    <h5>2. Respaldo incremental</h5>
+    <p>Solo copia los archivos modificados desde el último respaldo (cualquiera).<br>Ventaja: rápido y ahorra espacio.<br>Desventaja: recuperación más lenta (requiere todas las copias anteriores).</p>
+
+    <h5>3. Respaldo diferencial</h5>
+    <p>Copia archivos modificados desde el último respaldo completo.<br>Compromiso entre velocidad y simplicidad.</p>
+
+    <h4>Buenas prácticas para respaldos</h4>
+
+    <h5>Aplicar la regla 3-2-1:</h5>
+    <ul>
+      <li>3 copias de los datos</li>
+      <li>2 en medios diferentes</li>
+      <li>1 en ubicación externa (como la nube)</li>
+    </ul>
+
+    <h5>Automatizar el proceso</h5>
+    <p>Usar software de respaldo programado.</p>
+
+    <h5>Proteger con cifrado</h5>
+    <p>Para evitar accesos no autorizados.</p>
+
+    <h5>Probar los respaldos</h5>
+    <p>Verificar regularmente que los archivos se pueden recuperar.</p>
+
+    <h5>Documentar el plan de respaldo</h5>
+    <p>Quién lo hace, cuándo, cómo y dónde.</p>
+  </div>
+</body>
+</html>

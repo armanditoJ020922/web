@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instalación y Actualización de Programas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: 40px auto;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    h1 {
+      color: #1a202c;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #4a90e2;
+      padding-bottom: 8px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: inside disc;
+      margin-bottom: 25px;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    strong {
+      color: #2b6cb0;
+    }
+
+    /* Emoji/icon styles */
+    p strong::before {
+      content: "✅ ";
+      color: #38a169;
+    }
+
+    h1:nth-of-type(2)::before {
+      content: "🧱 ";
+      margin-right: 5px;
+    }
+
+    h1:nth-of-type(3)::before {
+      content: "🔄 ";
+      margin-right: 5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px 20px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p, ul li {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        margin: 20px 10px;
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      p, ul li {
+        font-size: 0.95rem;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <style>
+  .btn-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* o left: 20px; */
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s;
+    z-index: 1000;
+  }
+
+  .btn-home:hover {
+    background-color: #555;
+  }
+</style>
+
+<a href="proyecto.html" class="btn-home">Volver al inicio</a>
+</head>
+<body>
+  <div class="container">
+    <h1>¿Qué es la instalación y actualización de programas de cómputo?</h1>
+    <p><strong>Instalación:</strong> Proceso de copiar y configurar un software en un sistema para su uso correcto.</p>
+    <p><strong>Actualización:</strong> Sustituye una versión anterior por una más reciente, con mejoras o parches.</p>
+
+    <h1>Proceso de instalación de software</h1>
+    <ul>
+      <li><strong>Planificación:</strong> Verifica compatibilidad, requisitos técnicos y licencias.</li>
+      <li><strong>Descarga o adquisición:</strong> Asegura obtenerlo desde fuentes oficiales o seguras.</li>
+      <li><strong>Ejecución del instalador:</strong> Se inicia el archivo (.exe, .dmg, .deb, etc.) y se siguen los pasos.</li>
+      <li><strong>Configuración:</strong> Opciones de idioma, plugins y accesos directos.</li>
+      <li><strong>Verificación:</strong> Se comprueba el funcionamiento correcto mediante una prueba básica.</li>
+    </ul>
+
+    <h1>Proceso de actualización de software</h1>
+    <ul>
+      <li><strong>Detección:</strong> Puede ser manual o automática.</li>
+      <li><strong>Descarga de archivos:</strong> Se bajan solo los modificados o todo el paquete si es una versión mayor.</li>
+      <li><strong>Instalación de actualización:</strong> Puede requerir cerrar el programa o reiniciar el equipo.</li>
+      <li><strong>Verificación y registro:</strong> Se prueba y documenta la nueva versión instalada.</li>
+    </ul>
+  </div>
+</body>
+</html>

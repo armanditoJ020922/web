@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Presentación del Equipo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #333;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: #f9f9f9;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.3em;
+      color: #444;
+    }
+
+    strong {
+      color: #222;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 15px 10px;
+      }
+      .container {
+        padding: 20px 15px;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Botón fijo para volver a inicio */
+    .btn-home {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+      user-select: none;
+    }
+
+    .btn-home:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>El equipo está conformado por <strong>Jessica Nataly León Cruz</strong> y <strong>Armando Martínez Grande</strong>. Para el diseño de esta página web, se optó cuidadosamente por una propuesta visual que consideramos adecuada y coherente con el tema que se aborda. El estilo elegido no solo refleja de manera clara y precisa los objetivos del proyecto, sino que también facilita una experiencia de usuario amigable y profesional.</p>
+
+    <p>Además, la selección de colores se realizó con el propósito de generar una atmósfera visual agradable y armoniosa, la cual contribuye significativamente a la percepción positiva del contenido por parte de los visitantes. Este enfoque integral busca asegurar que la presentación sea no solo estética, sino también funcional y alineada con los estándares de calidad que se esperan en entornos académicos y profesionales.</p>
+  </div>
+
+  <a href="proyecto.html" class="btn-home">Volver al inicio</a>
+</body>
+</html>

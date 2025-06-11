@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	 <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 10px 10px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Identificacion de las politicas y controles aplicables al software y de sistemas de una organizacion</div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="quien.html">Quienes somos</a>
+       <a href="ad.html">Adquisicion de equipos de computo</a>
+      <a href="li.html">Licenciamiento de Software</a>
+      <a href="in.html">Instalacion y/o actualizacion de programas de computo</a>
+      <a href="re.html">Respaldos de informacion</a>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+   <style>
+  .imagen-responsiva {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* centra la imagen */
+  }
+</style>
+
+<img src="m.jpg" alt="mapa" class="imagen-responsiva">
+</head>
+<body>
+</body>
+</html>
